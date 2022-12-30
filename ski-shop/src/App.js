@@ -1,6 +1,8 @@
 import {GiShoppingBag} from "react-icons/gi"
 import RatingStars from "./components/RatingStars.js"
 import './App.css';
+import { useState } from "react";
+import ShoppingCart from "./components/ShoppingCart.js";
 
 const products = [
   {
@@ -24,11 +26,15 @@ const products = [
 ]
 
 function App() {
+  const[cartsVisibility, setCartVisible] = useState(false);
+  const[productsInCart, setProducts] = useState([]);
+  
   return (
     <div className="App">
+      <ShoppingCart visibility = {cartsVisibility} products={productsInCart}/>
       <div className="navbar">
         <h3 className="logo">Logo</h3>
-        <button className="btn shopping-cart-btn">
+        <button className="btn shopping-cart-btn" onClick={() => setCartVisible(true)}>
           <GiShoppingBag size={24}/>
         </button>
       </div>

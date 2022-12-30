@@ -3,11 +3,11 @@ import "../shoppingCart.css"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {RiDeleteBin6Line} from "react-icons/ri"
 
-const ShoppingCart = ({visibilty, products, onProductRemove, onClose, onQuantityChange}) => {
+const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantityChange}) => {
     return (
         <div 
             className="modal" 
-            style={{display: visibilty
+            style={{display: visibility
                 ? "block"
                 : "none", 
             
