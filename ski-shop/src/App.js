@@ -1,7 +1,7 @@
 import {GiShoppingBag} from "react-icons/gi"
 import RatingStars from "./components/RatingStars.js"
 import './App.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ShoppingCart from "./components/ShoppingCart.js";
 
 const products = [
@@ -29,7 +29,17 @@ function App() {
 
   const[cartsVisibility, setCartVisible] = useState(false);
 
-  const[productsInCart, setProducts] = useState([]);
+  const[productsInCart, setProducts] = useState(
+    JSON.parse(
+      localStorage.getItem(
+        "shopping-cart"
+      )
+    ) || []
+  );
+
+  useEffect(() => {
+    localStorage.setItem("shopping-cart", JSON.stringify(productsInCart))
+  }, [productsInCart])
 
   const addProductToCart = (product) =>{
     const newProduct = {
