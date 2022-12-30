@@ -48,7 +48,7 @@
   width: 20px;
   height: 20px;
   border-radius: 12px;
-  background-color: var(--secondary-color);
+  background-color: red;
   overflow: hidden;
 }
 

@@ -24,20 +24,62 @@ const products = [
 		image: require("./assets/images/product-2.png"),
 	},
 ]
-
+//void start(){Console.WriteLine("")}
 function App() {
+
   const[cartsVisibility, setCartVisible] = useState(false);
+
   const[productsInCart, setProducts] = useState([]);
+
+  const addProductToCart = (product) =>{
+    const newProduct = {
+      ...product,
+      count: 1,
+    }
+    setProducts([...productsInCart, newProduct,])
+  }
+
+  const onQuantityChange = (productId, count) =>{
+    setProducts((oldState) => {
+      const productsIndex = oldState.findIndex((item) => item.id === productId)
+      if(productsIndex !== -1) {
+        oldState[productsIndex].count = count
+      }
+      return [...oldState]
+    })
+  }
+
+  const onProductRemove = (product) =>{
+    setProducts((oldState) => {
+      const productsIndex = oldState.findIndex((item) => item.id === product.id)
+      if(productsIndex !== -1) {
+        oldState.splice(productsIndex, 1)
+      }
+      return [...oldState]
+    })
+  }
   
   return (
     <div className="App">
-      <ShoppingCart visibility = {cartsVisibility} products={productsInCart}/>
+      <ShoppingCart 
+        visibility = {cartsVisibility} 
+        products={productsInCart}
+        onClose={()=>setCartVisible(false)}
+        onQuantityChange = {onQuantityChange}
+        onProductRemove = {onProductRemove}
+        />
+
       <div className="navbar">
         <h3 className="logo">Logo</h3>
+        
         <button className="btn shopping-cart-btn" onClick={() => setCartVisible(true)}>
           <GiShoppingBag size={24}/>
+            <span className="product-count">
+              <h4>{productsInCart.length}</h4>
+            </span>
         </button>
       </div>
+      
       <main>
         <h2 className="title">
           Products
@@ -59,7 +101,10 @@ function App() {
           <span className="product-price">{product.price}$</span>
           <div className="buttons">
             <button className="btn">Detail</button>
-            <button className="btn">Add to cart</button>
+            <button className="btn" 
+              onClick={() => addProductToCart(product)}>
+              Add to cart
+              </button>
           </div>
         </div>
         ))}
