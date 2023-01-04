@@ -4,6 +4,7 @@ import './App.css';
 import { useState, useEffect } from "react";
 import ShoppingCart from "./components/ShoppingCart.js";
 import products from "./products.js"
+import logo from "../src/assets/logos/raw_logo.png"
 
 function App() {
 
@@ -59,16 +60,16 @@ function App() {
         onProductRemove = {onProductRemove}
         />
 
-      <div className="navbar">
-        <h3 className="logo">Logo</h3>
+      <header className="navbar">
+        <img className="logo" src={logo} alt="logo"/>
         
         <button className="btn shopping-cart-btn" onClick={() => setCartVisible(true)}>
-          <GiShoppingBag size={24}/>
+          <GiShoppingBag size={35}/>
             <span className="product-count">
               <h4>{productsInCart.length}</h4>
             </span>
         </button>
-      </div>
+      </header>
       
       <main>
         <h2 className="title">
