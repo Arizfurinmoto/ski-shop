@@ -75,9 +75,8 @@ function App() {
       </header>
       
       <main>
-        <h2 className="title">
-          Products
-        </h2>
+        <h2 className="title">Products</h2>
+        <div className="line"/>
         {/* LIST OF PRODUCTS */}
         <div className="products">
 

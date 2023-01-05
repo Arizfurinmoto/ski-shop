@@ -65,6 +65,8 @@ main {
 
 .title {
   margin: 2rem 0;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 
@@ -166,4 +168,13 @@ main {
 .buttons .btn:hover {
   background-color: var(--main-color);
   color: #fff;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--main-color);
+    align-self: center;
 }

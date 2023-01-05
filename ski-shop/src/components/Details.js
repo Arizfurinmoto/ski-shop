@@ -36,7 +36,6 @@ const Details = ({visibility, product, onClose}) => {
 
                     <div className="detailColumn">
                         <img src={logo} alt={"logo"}/>
-                        {/* <div className="line"/> */}
                         <div className="longDescContainer">
                             <p className="shortDesc">{product.longdescription}</p>
                         </div>
