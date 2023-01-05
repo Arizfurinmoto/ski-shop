@@ -9,7 +9,7 @@ const products = [{
 	},
 	{
 		id: 2,
-		name: "Czerwony Kask bolle",
+		name: "Czerwony Kask Bolle",
 		rating: 2.1,
 		description: "Nasze kaski narciarskie to idealne połączenie lekkości i wytrzymałości, dzięki czemu zapewniają maksymalny komfort podczas jazdy na nartach.",
 		longdescription: "Nasz kask narciarski to najlepsze rozwiązanie dla tych, którzy cenią sobie bezpieczeństwo i wygodę podczas jazdy na nartach. Wysokiej jakości skorupa zewnętrzna i amortyzująca warstwa wewnętrzna chronią głowę przed urazami spowodowanymi upadkami lub kontaktem z innymi przedmiotami. Kask posiada także system wentylacji, który zapewnia odpowiednią temperaturę głowy podczas jazdy. Dostępny jest w kilku rozmiarach, aby dopasować go do rozmiaru głowy użytkownika.",
@@ -36,7 +36,7 @@ const products = [{
 	},
 	{
 		id: 5,
-		name: "Narty salomon",
+		name: "Narty Salomon",
 		rating: 2.5,
 		description: "Nasze narty to połączenie nowoczesnej technologii i stylowego designu, dzięki czemu są idealne dla wszystkich miłośników jazdy na nartach.",
 		longdescription: "Nasze narty to idealne rozwiązanie dla miłośników szybkiej jazdy i wyzwań na stoku. Dzięki zastosowaniu nowoczesnych technologii takich jak wzmocniona konstrukcja z włókna węglowego oraz profilowana powierzchnia boczna, narty zapewniają doskonałą przyczepność i stabilność nawet w najtrudniejszych warunkach. Ich lekka i smukła budowa pozwala na łatwe manewrowanie i szybkie reakcje, co sprawia, że są one idealne zarówno dla zaawansowanych, jak i początkujących narciarzy.",
@@ -45,7 +45,7 @@ const products = [{
 	},
 	{
 		id: 6,
-		name: "Czerwono-Zielone Rossignol narty",
+		name: "Czerwono-Zielone Rossignol Narty",
 		rating: 5.0,
 		description: "Dzięki naszym nartom będziesz mógł cieszyć się perfekcyjną kontrolą podczas jazdy, dzięki specjalnie zaprojektowanym krawędziom oraz lekkiej konstrukcji.",
 		longdescription: "Jeśli szukasz nart, które zapewnią Ci płynną i komfortową jazdę, to nasza propozycja jest właśnie dla Ciebie. Nasze narty zostały zaprojektowane z myślą o narciarzach o umiarkowanym poziomie zaawansowania, którzy cenią sobie wygodę i bezpieczeństwo na stoku. Dzięki zastosowaniu specjalnego systemu amortyzacji oraz szerokiej platformie, narty te zapewniają wysoki komfort jazdy i doskonale tłumią wstrząsy. Ich uniwersalny charakter sprawia, że sprawdzą się zarówno na twardych, jak i średnio miękkich nawierzchniach.",
@@ -63,7 +63,7 @@ const products = [{
 	},
 	{
 		id: 8,
-		name: "Czarna deska  snowboardowa Burton",
+		name: "Czarna deska Snowboardowa Burton",
 		rating: 4.3,
 		description: "Nasze snowboardy to połączenie nowoczesnej technologii i modnego designu, dzięki czemu są idealne dla wszystkich miłośników jazdy na snowboardzie.",
 		longdescription: "Nasze deski snowboardowe to połączenie wytrzymałości i zwrotności, dzięki zastosowaniu nowoczesnych technologii takich jak konstrukcja z włókna węglowego oraz specjalny profil boczny. Deski te zapewniają doskonałą przyczepność i stabilność podczas jazdy zarówno po prostej, jak i w trakcie skrętów, co sprawia, że są one idealne dla zaawansowanych snowboardzistów. Ich lekka budowa umożliwia łatwe manewrowanie i szybkie reakcje, a specjalnie zaprojektowana platforma zapewnia wysoki komfort jazdy.",
@@ -72,7 +72,7 @@ const products = [{
 	},
 	{
 		id: 9,
-		name: "Pomarańczowa deska snowboardowa Arbor",
+		name: "Pomarańczowa Deska Snowboardowa Arbor",
 		rating: 3.7,
 		description: "Dzięki naszym snowboardom będziesz mógł cieszyć się perfekcyjną kontrolą podczas jazdy, dzięki specjalnie zaprojektowanej sztywności oraz lekkiej konstrukcji.",
 		longdescription: "Jeśli szukasz deski snowboardowej, która zapewni Ci płynną i komfortową jazdę, to nasza propozycja jest właśnie dla Ciebie. Nasze deski zostały zaprojektowane z myślą o snowboardzistach o umiarkowanym poziomie zaawansowania, którzy cenią sobie wygodę i bezpieczeństwo na stoku. Dzięki zastosowaniu specjalnego systemu amortyzacji oraz szerokiej platformie, deski te zapewniają doskonały komfort jazdy i doskonale tłumią wstrząsy. Ich uniwersalny charakter sprawia, że sprawdzą się zarówno na twardych, jak i średnio miękkich nawierzchniach.",
@@ -81,7 +81,7 @@ const products = [{
 	},
 	{
 		id: 10,
-		name: "Zielona deska snowboardowa K2 Snowboarding",
+		name: "Zielona Deska Snowboardowa K2 Snowboarding",
 		rating: 4.5,
 		description: "Nasze snowboardy są idealne dla wymagających snowboardzistów, którzy cenią sobie wyjątkową jakość oraz wydajność na stoku.",
 		longdescription: "Dla wymagających snowboardzistów, którzy szukają deski o najwyższych osiągach, mamy coś specjalnego. Nasze deski snowboardowe to prawdziwe narzędzie szybkości i zwrotności, dzięki zastosowaniu ultralekkich materiałów i wysoko wyprofilowanego kształtu. Ich agresywna konstrukcja zapewnia maksymalną przyczepność i stabilność podczas jazdy w trudnych warunkach, a specjalnie zaprojektowana platforma umożliwia szybkie i precyzyjne skręcanie. Te deski to prawdziwe narzędzie dla zaawansowanych snowboardzistów, którzy cenią sobie maksymalne wrażenia z jazdy i nie boją się wyzwań na stoku.",
@@ -90,7 +90,7 @@ const products = [{
 	},
 	{
 		id: 11,
-		name: "Czarne Buty narciarskie Rossignol",
+		name: "Czarne Buty Narciarskie Rossignol",
 		rating: 1.4,
 		description: "Nasze buty narciarskie to idealne połączenie komfortu i wydajności, dzięki specjalnym technologiom oraz nowoczesnemu designowi.",
 		longdescription: "Nasze buty narciarskie to połączenie wygody i wytrzymałości, dzięki zastosowaniu nowoczesnych technologii takich jak specjalna wkładka z amortyzacją oraz wodoodporna i oddychająca membrana. Buty te zapewniają doskonały komfort podczas jazdy na nartach, dzięki elastycznemu i dopasowującemu się kształtowi oraz specjalnemu systemowi sznurowania, który umożliwia idealne dopasowanie buta do stopy. Ich wytrzymała konstrukcja sprawia, że są one odporne na uszkodzenia i doskonale sprawdzają się w najtrudniejszych warunkach.",
@@ -99,7 +99,7 @@ const products = [{
 	},
 	{
 		id: 12,
-		name: "Niebieskie narty biegowe Salomon",
+		name: "Niebieskie Narty Biegowe Salomon",
 		rating: 1.6,
 		description: "Nasze narty biegowe to połączenie lekkości i wytrzymałości, dzięki czemu zapewniają maksymalną wydajność podczas biegu na nartach.",
 		longdescription: "Nasze narty biegowe to połączenie szybkości i wytrzymałości, dzięki zastosowaniu nowoczesnych technologii takich jak konstrukcja z włókna węglowego oraz specjalny profil boczny. Narty te zapewniają doskonałą przyczepność i stabilność podczas jazdy po różnych nawierzchniach, a ich lekka budowa umożliwia łatwe manewrowanie i szybkie reakcje. Ich specjalny kształt i szeroka platforma zapewniają wysoki komfort jazdy, a elastyczne wiązania pozwalają na idealne dopasowanie do stopy.",
@@ -108,7 +108,7 @@ const products = [{
 	},
 	{
 		id: 13,
-		name: "Czarne narty biegowe Salomon",
+		name: "Czarne Narty Biegowe Salomon",
 		rating: 3.4,
 		description: "Dzięki naszym nartom biegowym będziesz mógł cieszyć się perfekcyjną przyczepnością oraz kontrolą podczas jazdy, dzięki specjalnie zaprojektowanym krawędziom oraz lekkiej konstrukcji.",
 		longdescription: "Jeśli szukasz nart biegowych, które zapewnią Ci płynną i komfortową jazdę, to nasza propozycja jest właśnie dla Ciebie. Nasze narty zostały zaprojektowane z myślą o biegaczach o umiarkowanym poziomie zaawansowania, którzy cenią sobie wygodę i bezpieczeństwo podczas treningów. Dzięki zastosowaniu specjalnego systemu amortyzacji oraz szerokiej platformie, narty te zapewniają doskonały komfort jazdy i doskonale tłumią wstrząsy. Ich uniwersalny charakter sprawia, że sprawdzą się zarówno na twardych, jak i średnio miękkich nawierzchniach.",
@@ -117,7 +117,7 @@ const products = [{
 	},
 	{
 		id: 14,
-		name: "Pomarańczowe gogle narciarskie Smith",
+		name: "Pomarańczowe Gogle Narciarskie Smith",
 		rating: 3.8,
 		description: "Nasze gogle narciarskie to połączenie nowoczesnej technologii i modnego designu, dzięki czemu są idealne dla wszystkich miłośników jazdy na nartach.",
 		longdescription: "Nasze gogle narciarskie to połączenie wygody i bezpieczeństwa, dzięki zastosowaniu nowoczesnych technologii takich jak specjalna szyba z filtrem UV oraz oddychająca i wodoodporna membrana. Gogle te zapewniają doskonałą widoczność nawet w najtrudniejszych warunkach pogodowych, dzięki specjalnemu systemowi wentylacji oraz elastycznemu i dopasowującemu się kształtowi. Ich wytrzymała konstrukcja sprawia, że są one odporne na uszkodzenia i doskonale sprawdzają się podczas jazdy na nartach.",
@@ -126,7 +126,7 @@ const products = [{
 	},
 	{
 		id: 15,
-		name: "Niebieskie gogle Oakley",
+		name: "Niebieskie Gogle Oakley",
 		rating: 2.9,
 		description: "Dzięki naszym goglom narciarskim będziesz mógł cieszyć się doskonałą widocznością oraz komfortem podczas jazdy, dzięki specjalnym szkłom oraz wentylacji.",
 		longdescription: "Jeśli szukasz gogli narciarskich, które zapewnią Ci płynną i komfortową jazdę, to nasza propozycja jest właśnie dla Ciebie. Nasze gogle zostały zaprojektowane z myślą o narciarzach o umiarkowanym poziomie zaawansowania, którzy cenią sobie wygodę i bezpieczeństwo na stoku. Dzięki zastosowaniu specjalnej szyby z filtrem UV oraz elastycznej i oddychającej membranie, gogle te zapewniają doskonałą widoczność i komfort podczas jazdy na nartach. Ich uniwersalny charakter sprawia, że sprawdzą się zarówno w słoneczne, jak i pochmurne dni.",

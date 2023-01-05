@@ -4,7 +4,7 @@ import RatingStars from "./RatingStars"
 import logo from "../assets/logos/raw_logo.png"
 
 const Details = ({visibility, product, onClose}) => {
-    
+
     return(
         <div className="detailModal" style={{display: visibility ? "block" : "none"}}>
             <div className="clickableSpace" onClick={onClose}/>
