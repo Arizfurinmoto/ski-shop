@@ -11,6 +11,7 @@ function App() {
 
   const [cartsVisibility, setCartVisible] = useState(false);
   const [detailvisibility, setDetailVisibility] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState(products[0])
 
   const[productsInCart, setProducts] = useState(
     JSON.parse(
@@ -85,7 +86,7 @@ function App() {
 
               <Details
                 visibility={detailvisibility}
-                product={product}
+                product={selectedProduct}
                 onClose={() => setDetailVisibility(false)}
               />
 
@@ -102,7 +103,7 @@ function App() {
               <span className="product-price">{product.price}$</span>
           
               <div className="buttons">
-                <button className="btn" onClick={()=>setDetailVisibility(true)}>Detail</button>
+                <button className="btn" onClick={() => { setDetailVisibility(true); setSelectedProduct(product) }}>Detail</button>
                 <button className="btn" onClick={() => addProductToCart(product)}>Add to cart</button>
               </div>
 

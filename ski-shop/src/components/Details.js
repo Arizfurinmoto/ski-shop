@@ -6,7 +6,7 @@ const Details = ({visibility, product, onClose}) => {
     return(
         <div className="detailModal" style={{display: visibility ? "block" : "none"}}>
             <div className="clickableSpace" onClick={onClose}/>
-            <div className="details" key={product.id}>
+            <div className="details">
 
                 <header className="header">
                     <div className="titleContainer">
