@@ -13,6 +13,7 @@
 .shoppingCart {
     width: 60%;
     height: 90%;
+    min-width: 500px;
     margin: 2rem auto;
     background-color: #eee;
     padding: 1rem;
