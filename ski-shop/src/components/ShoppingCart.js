@@ -14,12 +14,11 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
             }}>
             <div className="shoppingCart">
                 <div className="header">
-                <h2>Shopping cart</h2>
-                <button className="btn close-btn" onClick={onClose}>
-                    <AiFillCloseCircle size={30}/>
-
-                </button>
-            </div>
+                    <h2>Shopping cart</h2>
+                    <button className="btn close-btn" onClick={onClose}>
+                        <AiFillCloseCircle size={30}/>
+                    </button>
+                </div>
             <div className="cart-products">
                 {/* If product.length equals 0 then display <span> */}
                 {products.length === 0 && (

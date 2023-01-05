@@ -3,12 +3,14 @@ import RatingStars from "./components/RatingStars.js"
 import './App.css';
 import { useState, useEffect } from "react";
 import ShoppingCart from "./components/ShoppingCart.js";
+import Details from "./components/Details.js";
 import products from "./products.js"
 import logo from "../src/assets/logos/raw_logo.png"
 
 function App() {
 
-  const[cartsVisibility, setCartVisible] = useState(false);
+  const [cartsVisibility, setCartVisible] = useState(false);
+  const [detailvisibility, setDetailVisibility] = useState(false)
 
   const[productsInCart, setProducts] = useState(
     JSON.parse(
@@ -75,14 +77,21 @@ function App() {
         <h2 className="title">
           Products
         </h2>
+        {/* LIST OF PRODUCTS */}
         <div className="products">
 
           {products.map((product) => (
             <div className="product" key={product.id}>
 
+              <Details
+                visibility={detailvisibility}
+                product={product}
+                onClose={() => setDetailVisibility(false)}
+              />
+
               <img className="product-image"
               src={product.image}
-              alt={product.image}/>
+              alt={"Obraz dla " + product.name}/>
 
               <h4 className="product-name">{product.name}</h4>
           
@@ -93,7 +102,7 @@ function App() {
               <span className="product-price">{product.price}$</span>
           
               <div className="buttons">
-                <button className="btn">Detail</button>
+                <button className="btn" onClick={()=>setDetailVisibility(true)}>Detail</button>
                 <button className="btn" onClick={() => addProductToCart(product)}>Add to cart</button>
               </div>
 
