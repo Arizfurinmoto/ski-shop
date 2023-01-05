@@ -12,6 +12,7 @@ function App() {
   const [cartsVisibility, setCartVisible] = useState(false);
   const [detailvisibility, setDetailVisibility] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(products[0])
+  const [totalPrice, setTotalPrice] = useState(0)
 
   const[productsInCart, setProducts] = useState(
     JSON.parse(
@@ -20,6 +21,14 @@ function App() {
       )
     ) || []
   );
+
+  const calculateTotalPrice = () =>{
+    let outcome = 0
+    for (let i = 0; i<productsInCart.length; i++){
+      outcome = outcome + productsInCart[i].price
+    }
+    setTotalPrice(outcome)
+  }
 
   useEffect(() => {
     localStorage.setItem("shopping-cart", JSON.stringify(productsInCart))
@@ -61,6 +70,8 @@ function App() {
         onClose={()=>setCartVisible(false)}
         onQuantityChange = {onQuantityChange}
         onProductRemove = {onProductRemove}
+        outcome = {totalPrice}
+        calculateTotalPrice = {calculateTotalPrice}
         />
 
       <header className="navbar">

@@ -1,9 +1,14 @@
 import "../shoppingCart.css"
-
+import { useState, useEffect } from "react"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {RiDeleteBin6Line} from "react-icons/ri"
 
-const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantityChange}) => {
+const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantityChange, outcome, calculateTotalPrice}) => {
+    
+    useEffect(() => {
+    calculateTotalPrice()
+  })
+
     return (
         <div 
             className="modal" 
@@ -39,7 +44,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                                 {product.name}
                             </h3>
                         <span className="product-price">
-                            {product.price * product.count}$                       
+                            {Math.round(product.price * product.count * 100)/100}$                       
                         </span>
                         </div>
 
@@ -63,8 +68,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                             })}
                                 
                         </select>
-                        <button className="btn remove-btn" onClick={() =>
-                            onProductRemove(product)            
+                        <button className="btn remove-btn" onClick={() =>onProductRemove(product)            
                         }>
                         <RiDeleteBin6Line size={20}/>    
                         </button>   
@@ -72,9 +76,10 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                     </div>
                 ))}
                 {products.length > 0 && (
-                    <button className="checkout-btn">
-                        Proceed to checkout
-                    </button> 
+                    <>
+                    <h2 className="total">Total: {Math.round(outcome * 100)/100} $</h2>
+                    <button className="checkout-btn">Proceed to checkout</button>
+                    </> 
                 )}
                 </div>    
             </div>
