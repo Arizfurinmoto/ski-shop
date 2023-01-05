@@ -63,7 +63,7 @@ const products = [{
 	},
 	{
 		id: 8,
-		name: "Czarna deska Snowboardowa Burton",
+		name: "Czarna Deska Snowboardowa Burton",
 		rating: 4.3,
 		description: "Nasze snowboardy to połączenie nowoczesnej technologii i modnego designu, dzięki czemu są idealne dla wszystkich miłośników jazdy na snowboardzie.",
 		longdescription: "Nasze deski snowboardowe to połączenie wytrzymałości i zwrotności, dzięki zastosowaniu nowoczesnych technologii takich jak konstrukcja z włókna węglowego oraz specjalny profil boczny. Deski te zapewniają doskonałą przyczepność i stabilność podczas jazdy zarówno po prostej, jak i w trakcie skrętów, co sprawia, że są one idealne dla zaawansowanych snowboardzistów. Ich lekka budowa umożliwia łatwe manewrowanie i szybkie reakcje, a specjalnie zaprojektowana platforma zapewnia wysoki komfort jazdy.",

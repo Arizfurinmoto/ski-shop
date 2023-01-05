@@ -111,9 +111,18 @@
 }
 
 .longDescContainer {
-    margin-top: 10px;
+    margin-top: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.longDesc {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6;
 }
