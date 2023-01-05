@@ -100,7 +100,7 @@ function App() {
 
               <p>{product.description}</p>
 
-              <span className="product-price">{product.price}$</span>
+              <span className="product-price">{product.price} $</span>
           
               <div className="buttons">
                 <button className="btn" onClick={() => { setDetailVisibility(true); setSelectedProduct(product) }}>Detail</button>

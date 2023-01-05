@@ -1,5 +1,7 @@
 import "../details.css"
 import {AiFillCloseCircle} from "react-icons/ai"
+import RatingStars from "./RatingStars"
+import logo from "../assets/logos/raw_logo.png"
 
 const Details = ({visibility, product, onClose}) => {
     
@@ -18,11 +20,29 @@ const Details = ({visibility, product, onClose}) => {
                 </header>
 
                 <section className="detailsContainer">
-                    <div className="imageBlock">
+
+                    <div className="detailColumn">
                         <img className="detailImage" src={product.image} alt={"Zdjęcie " + product.name}></img>
+                        <RatingStars rating={product.rating}/>
+                        <div className="shortDescContainer">
+                            <p className="shortDesc">{product.description}</p>
+                        </div>
+                        <div className="priceContainer">
+                            <p className="price">Price: {product.price} $</p>
+                        </div>
                     </div>
+
+                    <div className="placeholder"/>
+
+                    <div className="detailColumn">
+                        <img src={logo} alt={"logo"}/>
+                        {/* <div className="line"/> */}
+                        <div className="longDescContainer">
+                            <p className="shortDesc">{product.longdescription}</p>
+                        </div>
+                    </div>
+                    
                 </section>
-                <p>{product.description}</p>
             </div>
         </div>
     )
