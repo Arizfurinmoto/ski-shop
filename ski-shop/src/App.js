@@ -4,13 +4,15 @@ import './App.css';
 import { useState, useEffect } from "react";
 import ShoppingCart from "./components/ShoppingCart.js";
 import Details from "./components/Details.js";
+import Checkout from "./components/Checkout.js";
 import products from "./products.js"
 import logo from "../src/assets/logos/raw_logo.png"
 
 function App() {
 
   const [cartsVisibility, setCartVisible] = useState(false);
-  const [detailvisibility, setDetailVisibility] = useState(false)
+  const [detailVisibility, setDetailVisibility] = useState(false)
+  const [checkoutVisibility, setCheckoutVisibility] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(products[0])
   const [totalPrice, setTotalPrice] = useState(0)
 
@@ -74,6 +76,16 @@ function App() {
         calculateTotalPrice = {calculateTotalPrice}
         />
 
+      <Details
+        visibility={detailVisibility}
+        product={selectedProduct}
+        onClose={() => setDetailVisibility(false)}
+      />
+
+      <Checkout
+        visibility={checkoutVisibility}
+      />
+
       <header className="navbar">
         <img className="logo" src={logo} alt="logo"/>
         
@@ -93,12 +105,6 @@ function App() {
 
           {products.map((product) => (
             <div className="product" key={product.id}>
-
-              <Details
-                visibility={detailvisibility}
-                product={selectedProduct}
-                onClose={() => setDetailVisibility(false)}
-              />
 
               <img className="product-image"
               src={product.image}
