@@ -53,16 +53,29 @@
 
 .formContainer {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 50%;
+    width: 60%;
     background-color:aliceblue;
     border-radius: 15px;
     box-shadow: 0px 1px 2px 0px gray;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 35%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 0px 1px 2px 0px gray;
+    height: 60%;
 }
 
 .columnHeader {
@@ -75,13 +88,20 @@
     width: 100%;
 }
 
+.personalInf {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+}
+
 .info1 {
     margin-left: 30px;
 }
 
 .inputsContainer {
-    width: 100%;
-    margin-left: 20px;
+    width: 90%;
+    align-self: center;
 }
 
 .inputs{
@@ -95,7 +115,24 @@ label {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 40%;
+    width: 50%;
+}
+
+.label2 {
+    margin-left: 40px;
+}
+
+.label3 {
+    width: 100%;
+}
+
+.label4 {
+    width: 30%;
+}
+
+.label5 {
+    width: 30%;
+    margin-left: 40px;
 }
 
 .inputHeader {
@@ -105,4 +142,26 @@ label {
 ::placeholder {
     color: gray;
     text-align: center;
+    font-size: 16px;
+}
+
+.rowInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+select {
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 0px black;
+    border: 0;
+    text-align: center;
+    height: 35px;
+}
+
+input {
+    text-align: center;
+    font-size: 16px;
 }
