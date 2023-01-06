@@ -40,11 +40,10 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                             alt={product.name}
                         />
                         <div className="product-info">
-                            <h3>
-                                {product.name}
-                            </h3>
+                            {product.count > 1 && (<h3>{product.name} x {product.count}</h3>)}
+                            {product.count == 1 && (<h3>{product.name}</h3>)}
                         <span className="product-price">
-                            {Math.round(product.price * product.count * 100)/100}$                       
+                            {Math.round(product.price * product.count * 100)/100} $             
                         </span>
                         </div>
 

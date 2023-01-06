@@ -28,7 +28,7 @@ const Details = ({visibility, product, onClose}) => {
                             <p className="shortDesc">{product.description}</p>
                         </div>
                         <div className="priceContainer">
-                            <p className="price">Price: {product.price} $</p>
+                            <p className="price">Price: {Math.round(product.price * 100)/100} $</p>
                         </div>
                     </div>
 
