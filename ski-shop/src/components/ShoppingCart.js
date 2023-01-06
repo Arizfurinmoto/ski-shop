@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {RiDeleteBin6Line} from "react-icons/ri"
 
-const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantityChange, outcome, calculateTotalPrice}) => {
+const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantityChange, outcome, calculateTotalPrice, onCheckoutOpen}) => {
     
     useEffect(() => {
     calculateTotalPrice()
@@ -78,7 +78,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                 {products.length > 0 && (
                     <>
                     <h2 className="total">Total: {Math.round(outcome * 100)/100} $</h2>
-                    <button className="checkout-btn">Proceed to checkout</button>
+                    <button className="checkout-btn" onClick={() => {onCheckoutOpen(); onClose()}}>Proceed to checkout</button>
                     </> 
                 )}
                 </div>    

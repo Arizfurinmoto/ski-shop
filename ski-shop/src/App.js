@@ -74,6 +74,7 @@ function App() {
         onProductRemove = {onProductRemove}
         outcome = {totalPrice}
         calculateTotalPrice = {calculateTotalPrice}
+        onCheckoutOpen = {() => setCheckoutVisibility(true)}
         />
 
       <Details
@@ -84,6 +85,7 @@ function App() {
 
       <Checkout
         visibility={checkoutVisibility}
+        onClose={() => setCheckoutVisibility(false)}
       />
 
       <header className="navbar">
