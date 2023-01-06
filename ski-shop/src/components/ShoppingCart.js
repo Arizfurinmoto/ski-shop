@@ -17,6 +17,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                 : "none", 
             
             }}>
+            <div className="clickableSpace" onClick={onClose}/>
             <div className="shoppingCart">
                 <div className="header">
                     <h2>Shopping cart</h2>
