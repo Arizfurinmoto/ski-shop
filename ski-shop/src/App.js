@@ -25,7 +25,7 @@ function App() {
   const calculateTotalPrice = () =>{
     let outcome = 0
     for (let i = 0; i<productsInCart.length; i++){
-      outcome = outcome + productsInCart[i].price
+      outcome = outcome + productsInCart[i].price * productsInCart[i].count
     }
     setTotalPrice(outcome)
   }

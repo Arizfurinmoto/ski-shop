@@ -1,5 +1,5 @@
 import "../shoppingCart.css"
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {RiDeleteBin6Line} from "react-icons/ri"
 
@@ -27,7 +27,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
             <div className="cart-products">
                 {/* If product.length equals 0 then display <span> */}
                 {products.length === 0 && (
-                <span className="empty-text">Your basket is currently empty
+                <span className="empty-text">Your basket is currently empty.
                 </span>
                 )}
 
