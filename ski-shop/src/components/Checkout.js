@@ -4,6 +4,7 @@ import "../checkout.css"
 import countries from "../countries"
 
 const Checkout = ({visibility, onClose, products, outcome}) => {
+    
     return(
         <div style={{display: visibility ? "block" : "none"}}>
             <div className="checoutModal" style={{display: visibility ? "block" : "none"}}>
@@ -19,7 +20,7 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                         </button>
                     </header>
 
-                    <section className="formContainer">
+                    <form  className="formContainer">
 
                         <div className="column">
                             <section className="personalInf">
@@ -28,7 +29,8 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                                     <h2 className="info1">Personal Information</h2>
                                 </header>
 
-                                <form className="inputsContainer">
+                                <div className="inputsContainer">
+                                
 
                                     <div className="rowInputs">
 
@@ -99,8 +101,8 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                                     </div>
 
                                     
-                                </form>
                                 
+                                </div>
                             </section>
                         </div>
 
@@ -135,11 +137,11 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
 
                             </section>
 
-                            <button className="submitCheckout">Submit</button>
+                            <input type="reset" className="submitCheckout" name="p" value="Submit"/>
 
                         </div>
 
-                    </section>
+                    </form>
 
                 </div>
                 
