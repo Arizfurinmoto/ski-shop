@@ -86,6 +86,8 @@ function App() {
       <Checkout
         visibility={checkoutVisibility}
         onClose={() => setCheckoutVisibility(false)}
+        products={productsInCart}
+        outcome = {totalPrice}
       />
 
       <header className="navbar">

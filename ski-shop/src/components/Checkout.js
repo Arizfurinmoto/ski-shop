@@ -3,7 +3,7 @@ import {FaUserCircle, FaShoppingCart} from "react-icons/fa"
 import "../checkout.css"
 import countries from "../countries"
 
-const Checkout = ({visibility, onClose}) => {
+const Checkout = ({visibility, onClose, products, outcome}) => {
     return(
         <div style={{display: visibility ? "block" : "none"}}>
             <div className="checoutModal" style={{display: visibility ? "block" : "none"}}>
@@ -49,7 +49,7 @@ const Checkout = ({visibility, onClose}) => {
                                         <label>
                                             <h1 className="inputHeader">Country</h1>
                                             <select>
-                                                {countries.map(country => {
+                                                {countries.map((country) => {
                                                 return <option value={country} key={countries.indexOf(country)}>{country}</option>
                                             })}
                                             </select>
@@ -112,8 +112,30 @@ const Checkout = ({visibility, onClose}) => {
                                     <FaShoppingCart size={30}/>
                                     <h2 className="info1">Your order</h2>
                                 </header>
+                                            
+                                {products.map((product) => {
+                                    return(
+                                        // <h1>{product.name} x {product.count}</h1>
+                                        <div className="productCheckoutBox">
+
+                                            <div className="productCheckoutContent">
+                                                <div className="productNameAndQ">
+                                                    <p>{product.name} x {product.count}</p>
+                                                </div>
+                                                <p>{product.price * product.count} $</p>
+                                            </div>
+
+                                        </div>
+                                    )
+                                })}
+
+                                <div className="separator"/>
+
+                                <h1 className="totalCheckout">Total: {outcome} $</h1>
 
                             </section>
+
+                            <button className="submitCheckout">Submit</button>
 
                         </div>
 
