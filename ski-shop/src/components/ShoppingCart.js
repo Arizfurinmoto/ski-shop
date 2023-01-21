@@ -20,7 +20,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
             <div className="clickableSpace" onClick={onClose}/>
             <div className="shoppingCart">
                 <div className="header">
-                    <h2>Shopping cart</h2>
+                    <h2>Koszyk</h2>
                     <button className="btn close-btn" onClick={onClose}>
                         <AiFillCloseCircle size={30}/>
                     </button>
@@ -28,7 +28,7 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
             <div className="cart-products">
                 {/* If product.length equals 0 then display <span> */}
                 {products.length === 0 && (
-                <span className="empty-text">Your basket is currently empty.
+                <span className="empty-text">Twój koszyk jest aktualnie pusty.
                 </span>
                 )}
 
@@ -77,8 +77,8 @@ const ShoppingCart = ({visibility, products, onProductRemove, onClose, onQuantit
                 ))}
                 {products.length > 0 && (
                     <>
-                    <h2 className="total">Total: {Math.round(outcome * 100)/100} $</h2>
-                    <button className="checkout-btn" onClick={() => {onCheckoutOpen(); onClose()}}>Proceed to checkout</button>
+                    <h2 className="total">Suma: {Math.round(outcome * 100)/100} $</h2>
+                    <button className="checkout-btn" onClick={() => {onCheckoutOpen(); onClose()}}>Przejdź do rozliczenia</button>
                     </> 
                 )}
                 </div>    

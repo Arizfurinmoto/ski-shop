@@ -13,7 +13,7 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
 
                     <header className="header">
                         <div className="titleContainer">
-                            <h2>Checkout</h2>
+                            <h2>Rozliczenie</h2>
                         </div>
                         <button className="close-btn" onClick={onClose}>
                             <AiFillCloseCircle size={30}/>
@@ -26,21 +26,20 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                             <section className="personalInf">
                                 <header className="columnHeader">
                                     <FaUserCircle size={30}/>
-                                    <h2 className="info1">Personal Information</h2>
+                                    <h2 className="info1">Dane osobowe</h2>
                                 </header>
 
                                 <div className="inputsContainer">
                                 
-
                                     <div className="rowInputs">
 
                                             <label>
-                                                <h1 className="inputHeader">First name</h1>
+                                                <h1 className="inputHeader">Imię</h1>
                                                 <input type="text" className="inputs" placeholder="Jamal"/> 
                                             </label>
 
                                             <label className="label2">
-                                                <h1 className="inputHeader">Last name</h1>
+                                                <h1 className="inputHeader">Nazwisko</h1>
                                                 <input type="text" className="inputs" placeholder="Musiala"/> 
                                             </label>
 
@@ -49,7 +48,7 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                                     <div className="rowInputs">
 
                                         <label>
-                                            <h1 className="inputHeader">Country</h1>
+                                            <h1 className="inputHeader">Państwo</h1>
                                             <select>
                                                 {countries.map((country) => {
                                                 return <option value={country} key={countries.indexOf(country)}>{country}</option>
@@ -58,7 +57,7 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                                         </label>
 
                                         <label className="label2">
-                                            <h1 className="inputHeader">City</h1>
+                                            <h1 className="inputHeader">Miasto</h1>
                                             <input type="text" className="inputs" placeholder="Munchen"/> 
                                         </label>
 
@@ -67,17 +66,17 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                                     <div className="rowInputs">
 
                                         <label className="label4">
-                                            <h1 className="inputHeader">Postal Code</h1>
+                                            <h1 className="inputHeader">Kod pocztowy</h1>
                                             <input type="text" className="inputs" placeholder="00-000"/> 
                                         </label>
 
                                         <label className="label5">
-                                            <h1 className="inputHeader">Street</h1>
+                                            <h1 className="inputHeader">Ulica</h1>
                                             <input type="text" className="inputs" placeholder="Sabener"/> 
                                         </label>
 
                                         <label className="label5">
-                                            <h1 className="inputHeader">Number</h1>
+                                            <h1 className="inputHeader">Numer</h1>
                                             <input type="number" className="inputs" placeholder="51"/> 
                                         </label>
 
@@ -94,13 +93,11 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
                                      <div className="rowInputs">
 
                                         <label className="label3">
-                                            <h1 className="inputHeader">Phone Number</h1>
+                                            <h1 className="inputHeader">Numer telefonu</h1>
                                             <input type="tel" className="inputs" placeholder="111 222 333"/> 
                                         </label>
 
                                     </div>
-
-                                    
                                 
                                 </div>
                             </section>
@@ -112,7 +109,7 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
 
                                 <header className="columnHeader">
                                     <FaShoppingCart size={30}/>
-                                    <h2 className="info1">Your order</h2>
+                                    <h2 className="info1">Twoje zamówienie</h2>
                                 </header>
                                             
                                 {products.map((product) => {
@@ -133,11 +130,11 @@ const Checkout = ({visibility, onClose, products, outcome}) => {
 
                                 <div className="separator"/>
 
-                                <h1 className="totalCheckout">Total: {outcome} $</h1>
+                                <h1 className="totalCheckout">Suma: {Math.round(outcome * 100)/100} $</h1>
 
                             </section>
 
-                            <input type="reset" className="submitCheckout" name="p" value="Submit"/>
+                            <input type="reset" className="submitCheckout" name="p" value="Potwierdź"/>
 
                         </div>
 
